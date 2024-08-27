@@ -1,0 +1,109 @@
+Index: src/desafioModulo4/TabuadaMultiolicacao.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package desafioModulo4;\r\n\r\nimport java.util.Scanner;\r\n\r\npublic class TabuadaMultiolicacao implements Tabuada{\r\n\r\n    private  int numero = 0;\r\n\r\n    public int getNumero() {\r\n        return numero;\r\n    }\r\n\r\n    public void setNumero(int numero) {\r\n        this.numero = numero;\r\n    }\r\n\r\n\r\n    @Override\r\n    public double mostrarTabuada() {\r\n        Scanner sc = new Scanner(System.in);\r\n        System.out.println(\"=====================================\");\r\n        System.out.println(\"______tabuada de Multiplicação_______\");\r\n        System.out.println(\"=====================================\");\r\n        System.out.print(\"Informe um numero inteiro para realizar a tabuada :\");\r\n        setNumero(sc.nextInt());\r\n        for (int i = 1; i < 11; i++) {\r\n            System.out.println(getNumero() + \" x \" + i + \" = \" + (getNumero() * i));\r\n        }\r\n        System.out.println(\"Obrigado!!!\");\r\n\r\n\r\n        sc.close();\r\n        return 0;\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/desafioModulo4/TabuadaMultiolicacao.java b/src/desafioModulo4/TabuadaMultiolicacao.java
+--- a/src/desafioModulo4/TabuadaMultiolicacao.java	(revision d5654eb148f884bb38b2f20e9c84c1824b9ce50c)
++++ b/src/desafioModulo4/TabuadaMultiolicacao.java	(date 1724800179602)
+@@ -1,35 +1,2 @@
+-package desafioModulo4;
+-
+-import java.util.Scanner;
+-
+-public class TabuadaMultiolicacao implements Tabuada{
+-
+-    private  int numero = 0;
+-
+-    public int getNumero() {
+-        return numero;
+-    }
+-
+-    public void setNumero(int numero) {
+-        this.numero = numero;
+-    }
+-
+-
+-    @Override
+-    public double mostrarTabuada() {
+-        Scanner sc = new Scanner(System.in);
+-        System.out.println("=====================================");
+-        System.out.println("______tabuada de Multiplicação_______");
+-        System.out.println("=====================================");
+-        System.out.print("Informe um numero inteiro para realizar a tabuada :");
+-        setNumero(sc.nextInt());
+-        for (int i = 1; i < 11; i++) {
+-            System.out.println(getNumero() + " x " + i + " = " + (getNumero() * i));
+-        }
+-        System.out.println("Obrigado!!!");
+-
+-
+-        sc.close();
+-        return 0;
+-    }
++package desafioModulo4;public class TabuadaMultiolicacao {
+ }
+Index: src/desafiomodulo03/AnimalCachorro.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package desafiomodulo03;\r\n\r\npublic class AnimalCachorro extends Animal {\r\n\r\n    public void Abanar(){\r\n        System.out.println(\"Abanar a calda \");\r\n    }\r\n    @Override\r\n    public void emitirSom() {\r\n        System.out.println(\"Au Au Au\");\r\n\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/desafiomodulo03/AnimalCachorro.java b/src/desafiomodulo03/AnimalCachorro.java
+--- a/src/desafiomodulo03/AnimalCachorro.java	(revision d5654eb148f884bb38b2f20e9c84c1824b9ce50c)
++++ b/src/desafiomodulo03/AnimalCachorro.java	(date 1724800146398)
+@@ -1,14 +1,2 @@
+-package desafiomodulo03;
+-
+-public class AnimalCachorro extends Animal {
+-
+-    public void Abanar(){
+-        System.out.println("Abanar a calda ");
+-    }
+-    @Override
+-    public void emitirSom() {
+-        System.out.println("Au Au Au");
+-
+-    }
+-
++package desafiomodulo03;public class AnimalCachorro {
+ }
+Index: src/desafiomodulo03/AnimalPrincipal.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package desafiomodulo03;\r\n\r\npublic class AnimalPrincipal {\r\n    public static void main(String[] args) {\r\n        AnimalCachorro caos = new AnimalCachorro();\r\n        caos.setNome(\"Pacoça\");\r\n        caos.setPeso(6.360);\r\n        caos.setCor(\"Branco com manchas marrons\");\r\n        caos.setIdade(7);\r\n        caos.exibirDetalhes();\r\n        caos.emitirSom();\r\n\r\n        System.out.println(\"\\n\\n\");\r\n\r\n        AnimalGato felino = new AnimalGato();\r\n        felino.setNome(\"Amexa\");\r\n        felino.setPeso(1.360);\r\n        felino.setCor(\"Branco com manchas cinzas\");\r\n        felino.setIdade(2);\r\n        felino.exibirDetalhes();\r\n        felino.emitirSom();\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/desafiomodulo03/AnimalPrincipal.java b/src/desafiomodulo03/AnimalPrincipal.java
+--- a/src/desafiomodulo03/AnimalPrincipal.java	(revision d5654eb148f884bb38b2f20e9c84c1824b9ce50c)
++++ b/src/desafiomodulo03/AnimalPrincipal.java	(date 1724800149588)
+@@ -1,24 +1,2 @@
+-package desafiomodulo03;
+-
+-public class AnimalPrincipal {
+-    public static void main(String[] args) {
+-        AnimalCachorro caos = new AnimalCachorro();
+-        caos.setNome("Pacoça");
+-        caos.setPeso(6.360);
+-        caos.setCor("Branco com manchas marrons");
+-        caos.setIdade(7);
+-        caos.exibirDetalhes();
+-        caos.emitirSom();
+-
+-        System.out.println("\n\n");
+-
+-        AnimalGato felino = new AnimalGato();
+-        felino.setNome("Amexa");
+-        felino.setPeso(1.360);
+-        felino.setCor("Branco com manchas cinzas");
+-        felino.setIdade(2);
+-        felino.exibirDetalhes();
+-        felino.emitirSom();
+-
+-    }
++package desafiomodulo03;public class AnimalPrincipal {
+ }

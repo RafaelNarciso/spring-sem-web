@@ -1,0 +1,1 @@
+nome = Avatar, anoDeLancamento = 2009, Duração em minutos 16 min
