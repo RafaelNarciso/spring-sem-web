@@ -5,7 +5,8 @@ public class PessoaClass {
     int idade = 0;
 
     public  void exibir(){
-        System.out.println("Olá, como você esta se sentido " + nome);
+        System.out.println("SEJA BEM-VINDO ");
+        System.out.println("Olá, como voce esta sentido hoje  " + nome+ " .");
         System.out.println("Você tem " + idade + " anos");
     }
 }
